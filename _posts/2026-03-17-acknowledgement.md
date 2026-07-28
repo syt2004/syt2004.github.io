@@ -1,16 +1,13 @@
 ---
 layout: blog_post
-title: 'Acknowledgement'
-date: 2026-03-17
+title: 'AI Reasoning, espeically for the Embodied AI reasoning and their works.'
+date: 2025-03-17
 tags:
   - Blog
   - Post
   - Tag
 ---
+More details and the article will be found at： https://github.com/syt2004/AI-reasoning
 
-
-Thanks to [Yuqing Xie](https://yqxie99.github.io/) and [Kun Chen](https://kwen-chen.github.io/) for the contributions of the blog feature!
-
-## Section 1
 
 

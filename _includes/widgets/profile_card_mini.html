@@ -10,12 +10,14 @@
                             <img 
                                 src="{{ site.data.profile.portrait_url | relative_url }}" 
                                 class="figure-img img-fluid" 
+                                loading="lazy"
+                                decoding="async"
                                 data-toggle="tooltip" 
                                 data-placement="top" 
                                 title="{{ site.data.profile.portrait_caption }}">
                         </div>
                         <div class="mb-3 d-md-none text-center">
-                            <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle" style="max-width: 50%;" alt="Portrait">
+                            <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle" style="max-width: 50%;" alt="Portrait" loading="lazy" decoding="async">
                         </div>
                         {% endif %}
                     </div>
@@ -97,7 +99,7 @@
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-body p-0">
-                <img src="{{ site.data.profile.wechat_qrcode | relative_url }}" class="img-fluid">
+                <img src="{{ site.data.profile.wechat_qrcode | relative_url }}" class="img-fluid" loading="lazy" decoding="async">
             </div>
             {% if site.data.profile.wechat_prompt %}
             <div class="modal-body p-1">

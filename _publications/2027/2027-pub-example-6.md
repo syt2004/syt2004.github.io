@@ -17,7 +17,6 @@ authors:
   - Yongkang Zhang
   - Feiran Liu
   - Yutong Shen
-  - Qinghao Shao
   - Yufei Sun
   - Xin Wang
   - Renzhao Liang

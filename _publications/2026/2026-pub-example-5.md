@@ -6,7 +6,7 @@ pub:            "Life Long Agent @ ICLR 2026"
 pub_date:       "2026"
 abstract: >-
   We propose a bio-inspired dual-stream disentanglement framework separating environment and self-state representations to enable cross-domain, cross-skill generalization for human-scene long-horizon tasks, boosting subtask success by 23% and execution efficiency by 29% over prior methods.
-cover:          /assets/images/covers/datach.png
+cover:          /assets/images/covers/detach.png
 authors:
 - Yutong Shen
 - Hangxu Liu

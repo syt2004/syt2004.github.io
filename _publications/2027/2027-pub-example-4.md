@@ -19,7 +19,7 @@ authors:
   - Yutong Shen
   - Junjie Xie
   - Linfeng He
-  -Arash Ajoudani
+  - Arash Ajoudani
 links:
   Code: https://github.com/luost26/academic-homepage
   Unsplash: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk

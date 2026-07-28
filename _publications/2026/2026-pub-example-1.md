@@ -1,19 +1,22 @@
 ---
-title:          "MultiMotion: Multi Subject Video Motion Transfer via Video Diffusion Transformer"
-date:           2026-01-05 00:01:00 +0800
-selected:       true
-pub:            "AAAI Conference on Artificial Intelligence(AAAI)"
-pub_date:       "2026"
+title:          "Publication without cover image"
+date:           2023-01-1 00:01:00 +0800
+selected:       false
+pub:            "International Conference on Learning Representations (ICLR)"
+# pub_pre:        "Submitted to "
+# pub_post:       'Under review.'
+# pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
+pub_date:       "2023"
+
 abstract: >-
-  We propose MultiMotion, a DiT-based multi-object motion transfer framework with mask-aware AMF and RectPC solver, validated on our new MultiMotionEval benchmark with superior metrics.
-cover:          /assets/images/covers/multimotion.jpg
+  When the cover image is not provided, it will generate a random colorful bubble images as the cover image using the <code>bubble_visual_hash.js</code> script.
+cover:          /assets/images/covers/co.jpg
 authors:
-- Penghui Liu
-- Jiangshan Wang
-- Yutong Shen
-- Shanhui Mo
-- Chenyang Qi
-- Yue Ma
+  - Your Name*#
+  - James Wang*
+  - Some Other Name
+  - John Doe
 links:
-  Paper: https://www.cell.com
+  Code: https://github.com/luost26/bubble-visual-hash
+  Demo: https://luost26.github.io/bubble-visual-hash
 ---

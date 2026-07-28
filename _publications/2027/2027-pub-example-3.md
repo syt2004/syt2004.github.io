@@ -7,7 +7,7 @@ pub:            "Under Review"
 pub_post:       'Under review.'
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
 pub_date:       "2027"
-semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
+# semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
   We propose a whole-body control framework for humanoid robots that mitigates cross-skill interference in high-DoF systems via Specialized Expert Policies (SEP), a VLM-supervised Intelligent Routing Mechanism (IRM), and latent dynamics model-based training-time optimization, achieving significant return improvements and faster convergence on HumanoidBench.
 cover:          /assets/images/covers/metaworld.png

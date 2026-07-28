@@ -1,6 +1,6 @@
-primary_name: "Yutong"
+primary_name: "Yutong Shen"
 secondary_name: ""
-navbar_name: "Shen"
+navbar_name: " Yutong Shen"
 
 positions:
 - name: Undergraduate Student  # Logo is optional
@@ -34,17 +34,21 @@ portrait_url: /assets/images/photos/avatar.jpg
 portrait_caption: >-
   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
-education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
+experience:
+- name: University of Hamburg
+  logo: /assets/images/badges/hanbao.png
   position: >- 
-    Department of Electrical Engineering and Computer Science <br/>
-    Ph.D. Student
-  date: Sep. 2024 - present
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
+    Reaserch Intern Collebration in Robot Manipulation 
+  date: Sep. 2025 - Mar. 2026
+- name: Tsinghua University
+  logo: /assets/images/badges/thu.png
+  position: >- 
+    Reaserch Intern Collebration in World Model and Reinforcement Learning
+  date: Apr. 2025 - Aug. 2025
+- name: Beijing University of Technology
+  logo: /assets/images/badges/bjut.png
+  position: B.S. in Enginneering
+  date: Sep. 2023 - Jul. 2027
 
 # experience:
 # - name: Peking University

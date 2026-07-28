@@ -55,9 +55,14 @@ experience:
 #   date: Sep. 2019 - Jul. 2021
 
 awards:
-- name: Award Name 2
+- name: Mathematical Contest/Interdisciplinary Contest in Modeling Honorable Mention
+  date: 2026
+- name: The 1st World Humanoid Robot Games Group 1st
+  date: 2025
+- name: China Robot Competition and RoboCup China Open China 2nd
+  date: 2025
+- name: China University Intelligent Robot Creativity Competition China 2nd
+  date: 2025
+- name: China Intelligent Robot Fighting and Gymnastics Competition China 1st
   date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+

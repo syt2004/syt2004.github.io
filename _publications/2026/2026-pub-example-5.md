@@ -15,5 +15,6 @@ authors:
 - Ruizhe Xia
 - Tongtong Feng
 links:
-  Paper: https://www.cell.com
+  Paper: https://openreview.net/forum?id=lDeUCA7kR8
+  Page: https://sites.google.com/view/detach-learning-anonymous
 ---

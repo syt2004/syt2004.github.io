@@ -15,5 +15,6 @@ authors:
 - Ruizhe Xia
 - Tongtong Feng
 links:
-  Paper: https://www.cell.com
+  Paper: https://openreview.net/forum?id=vydZknbZR9
+  Code:  https://github.com/syt2004/metaworld
 ---

@@ -12,10 +12,9 @@ abstract: >-
   This paper proposes the zero-shot multimodal PAG-Agent framework for personalized music album generation with cross-modal aesthetic distillation, builds the ethical Personal-100 dataset, and designs the PA-Eval benchmark equipped with ACS and ASI metrics to quantify subjective aesthetic alignment, whose experiments show it surpasses all baselines with significant gains in aesthetic consistency and specificity and is validated by human evaluations.
 cover:          /assets/images/covers/pag.png
 authors:
-  - Liyang Gao
-  - Feiran Liu
   - Yifeng Mao
   - Ziye Wang
+  - Feiran Liu
   - Yi Shan
   - Runhao Quan
   - Ang Li

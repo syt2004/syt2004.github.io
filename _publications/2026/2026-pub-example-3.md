@@ -15,5 +15,5 @@ authors:
 - Chenyang Qi
 - Yue Ma
 links:
-  Paper: https://www.cell.com
+  Paper: https://ojs.aaai.org/index.php/AAAI/article/view/37660
 ---

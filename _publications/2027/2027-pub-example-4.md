@@ -1,7 +1,7 @@
 ---
 title:          "SPM: Surgical Plasticity Maintenance for Lifelong Reinforcement Learning in Big World"
 date:           2027-05-12 00:01:00 +0800
-selected:       true
+selected:       false
 pub:            "Under Review"
 # pub_pre:        "Submitted to "
 pub_post:       'Under review.'

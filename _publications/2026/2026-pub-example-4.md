@@ -15,6 +15,6 @@ authors:
 - Ruizhe Xia
 - Tongtong Feng
 links:
-  Paper: https://openreview.net/forum?id=vydZknbZR9
+  Paper: https://openaccess.thecvf.com/content/CVPR2026W/Viscale/papers/Shen_MetaWorld_Skill_Transfer_and_Composition_in_a_Hierarchical_World_Model_CVPRW_2026_paper.pdf
   Code:  https://github.com/syt2004/metaworld
 ---

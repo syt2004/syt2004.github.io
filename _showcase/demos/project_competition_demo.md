@@ -5,8 +5,8 @@ date: 2016-01-01 00:01:00 +0800
 group: Project and Competition Demos
 ---
 
-<div class="p-3 mx-auto" style="max-width: 700px;">
-  <h3 class="mb-3">Project and Competition Demos</h3>
+<div class="p-3 mx-auto" style="max-width: 740px;">
+  <h3 class="mb-3 text-center">Project and Competition Demos</h3>
   <div id="project-demo-slider" class="d-flex" style="overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: thin;" onscroll="document.getElementById('project-demo-page').textContent = (Math.round(this.scrollLeft / this.clientWidth) + 1) + ' / 3';">
     <div style="min-width: 100%; scroll-snap-align: start;">
       <video class="w-100 rounded-xl d-block" controls playsinline preload="metadata">

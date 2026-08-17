@@ -8,16 +8,12 @@ date: 2024-01-12 00:01:00 +0800
     <h2>Welcome to Showcase!</h2>
     <hr />
     <p>
-        <code>Showcase</code> is a page where you can show off almost anything you want. It can be the photo of your pets, your favorite books, your favorite projects, or anything else you want to show to the world.
+        Hello everyone, my name is Yutong Shen. Besides my research in artificial intelligence, I have many other hobbies, such as watching anime, drawing, and playing video games. I’m a big fan of the anime‑manga subculture. I would feel truly honored if I could one day make contributions to the anime‑manga space using AI. So please feel free to chat with me about anything related to anime and games!
     </p>
     <p>
-        You can create a new showcase item by creating a new file in the <code>_showcase</code> folder. It gives you the highest flexibility to customize the item using any HTML code.
+        As for sports, I love playing soccer. I played as a defender for six years, starting from the first grade of elementary school. After entering middle school, I barely got to play due to schoolwork. I’ve put on some weight and I’m currently trying to lose it — and I will succeed!
     </p>
     <p>
-        Cards are ordered by the <code>date</code> field in the front matter in descending order. The <code>width</code> field is used to determine the width of the card, ranging from 1 to 12.
-        Layout is done by the <a href="https://masonry.desandro.com/" target="_blank">Masonry</a> library.
-    </p>
-    <p>
-        For a tidy layout, it is recommended to set the width of the cards to be either multiple of 3 or multiple of 4 for all cards, except for small badges that do not take up much space (width=1).
+        Also, I’m looking for a girlfriend. If you could potentially be that special someone, don’t hesitate to talk to me! (^｡^)
     </p>
 </div>

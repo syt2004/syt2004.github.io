@@ -5,7 +5,7 @@ date: 2016-01-01 00:01:00 +0800
 group: Project and Competition Demos
 ---
 
-<div class="p-3">
+<div class="p-3 mx-auto" style="max-width: 780px;">
   <div id="project-demo-slider" class="d-flex" style="overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: thin;">
     <div style="min-width: 100%; scroll-snap-align: start;">
       <video class="w-100 rounded-xl d-block" controls playsinline preload="metadata">

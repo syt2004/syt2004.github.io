@@ -12,7 +12,7 @@ abstract: >-
   We propose CQ‑FM, which constructs a consequence‑quotient space based on task outcomes, pulls back the consequence‑aware metric into the action space via Jacobians, reshapes the Flow‑Matching loss during training and enables closed‑loop correction at inference to improve the task success rate and contact stability of vision‑language‑action robot manipulation policies.
 cover:          /assets/images/covers/cqfm.png
 authors:
-  - Yutong*
+  - Yutong Shen*
   - Haidong Huang*
   - Haoxuan Xu
   - Heng Zhang

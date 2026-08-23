@@ -1,7 +1,7 @@
 ---
 title:          "MetaWorld: Skill Transfer and Composition in a Hierarchical World Model for Grounding High-Level Instructions"
 date:           2026-01-05 00:01:00 +0800
-selected:       true
+selected:       false
 pub:            "ViSCALE @ CVPR"
 pub_date:       "2026"
 abstract: >-

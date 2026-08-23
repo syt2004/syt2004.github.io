@@ -1,7 +1,7 @@
 ---
 title:          "MultiMotion: Multi Subject Video Motion Transfer via Video Diffusion Transformer"
 date:           2026-01-05 00:01:00 +0800
-selected:       true
+selected:       false
 pub:            "AAAI Conference on Artificial Intelligence(AAAI)"
 pub_date:       "2026"
 abstract: >-

@@ -22,7 +22,7 @@ twitter: your_twitter_id  # Do not include the '@' symbol
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a member of the Robotics Integrated Laboratory, School of Information Science and Technology, Beijing University of Technology. In the early stage of my undergraduate studies, my research focused on applications of foundation models such as large language models and vision‑language models. Later, I dedicated myself to integrating these technologies into robot learning. My primary research now centers on robotic manipulation algorithms and the bottlenecks encountered during manipulation tasks.
+    I am a member of the Robotics Integrated Laboratory, School of Information Science and Technology, Beijing University of Technology. In the early stage of my undergraduate studies, my research focused on applications of foundation models such as large language models and vision‑language models. Later, I dedicated myself to integrating these technologies into Embodied AI learning, My primary research now centers on robotic manipulation algorithms and the bottlenecks encountered during manipulation tasks. My algorithmic research covers <span style="color:#2563eb; font-weight:bold;">dexterous hands</span>, <span style="color:#16a34a; font-weight:bold;">robotic arms</span>, and <span style="color:#ea580c; font-weight:bold;">humanoids</span>. I am passionate about all three domains rather than confining myself to one overly narrow area. Moving forward, I aim to advance my research in parallel across these three fields and develop insightful original ideas.
   </p>
   <p>
     In addition, I am applying for graduate positions. Feel free to reach out to me if you are interested in potential collaborations.

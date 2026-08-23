@@ -1,7 +1,7 @@
 ---
 title:          "Detach: Cross-domain Learning for Long-Horizon Tasks via Mixture of Disentangled Experts"
 date:           2026-01-05 00:01:00 +0800
-selected:       true
+selected:       false
 pub:            "Life Long Agent @ ICLR"
 pub_date:       "2026"
 abstract: >-

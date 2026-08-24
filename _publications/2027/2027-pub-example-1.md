@@ -1,5 +1,7 @@
 ---
 title:          "GeoPreserve: Condition-Preserving 3D Diffusion Policies for Contact-Sensitive Long-Horizon Manipulation"
+topic:          "Manipulation"
+topic_class:    "primary"
 date:           2027-05-12 00:01:00 +0800
 selected:       true
 pub:            "Under Review"

@@ -1,5 +1,7 @@
 ---
 title:          "Anchoring Personal Aesthetics in Music Generation through Cross-Modal Distillation and Automated Six-Dimensional Evaluation"
+topic:          "Agent"
+topic_class:    "secondary"
 date:           2027-05-12 00:01:00 +0800
 selected:       false
 pub:            "The Annual Conference of the European Chapter of the Association for Computational Linguistics (EACL)"

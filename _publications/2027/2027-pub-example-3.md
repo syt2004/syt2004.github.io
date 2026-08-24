@@ -1,7 +1,7 @@
 ---
 title:          "MetaWorld-X: Hierarchical World Modeling via Semantic-Prior Orchestrated Experts for Humanoid Loco-Manipulation"
 topic:          "Manipulation"
-topic_class:    "warning"
+topic_class:    "primary"
 date:           2027-05-12 00:01:00 +0800
 selected:       true
 pub:            "Under Review"

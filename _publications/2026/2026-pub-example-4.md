@@ -1,6 +1,6 @@
 ---
 title:          "MetaWorld: Skill Transfer and Composition in a Hierarchical World Model for Grounding High-Level Instructions"
-topic:          "Humanoids"
+topic:          "Manipulation"
 topic_class:    "warning"
 date:           2026-01-05 00:01:00 +0800
 selected:       false

@@ -1,5 +1,7 @@
 ---
 title:          "SPM: Surgical Plasticity Maintenance for Lifelong Reinforcement Learning in Big World"
+topic:          "Manipulation"
+topic_class:    "primary"
 date:           2027-05-12 00:01:00 +0800
 selected:       false
 pub:            "Under Review"

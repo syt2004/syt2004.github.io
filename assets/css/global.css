@@ -88,6 +88,13 @@ div.lazy {
     font-size: 100%;
 }
 
+.badge-publication-topic {
+    font-size: 55%;
+    vertical-align: middle;
+    margin-left: 0.35rem;
+    white-space: nowrap;
+}
+
 .email-text {
     font-family: Source Code Pro, monospace;
 }

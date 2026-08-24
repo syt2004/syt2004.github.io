@@ -1,6 +1,6 @@
 ---
 title:          "ALAS: Adaptive Long-Horizon Action Synthesis via Disentangled Environment and Self-State Representations"
-topic:          "Humanoids"
+topic:          "Manipulation"
 topic_class:    "warning"
 date:           2027-05-12 00:01:00 +0800
 selected:       true

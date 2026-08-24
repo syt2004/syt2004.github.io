@@ -1,5 +1,7 @@
 ---
 title:          "MESS: Deep Reasoning and Multimodal Agentic Framework for Evolutionary Survey Synthesis"
+topic:          "Agent"
+topic_class:    "secondary"
 date:           2026-01-05 00:01:00 +0800
 selected:       false
 pub:            "ACM International Conference on Multimedia (ACM MM)"

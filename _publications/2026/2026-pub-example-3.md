@@ -1,5 +1,7 @@
 ---
 title:          "MultiMotion: Multi Subject Video Motion Transfer via Video Diffusion Transformer"
+topic:          "AIGC"
+topic_class:    "success"
 date:           2026-01-05 00:01:00 +0800
 selected:       false
 pub:            "AAAI Conference on Artificial Intelligence(AAAI)"

@@ -1,5 +1,7 @@
 ---
 title:          "FENAS: A Few-shot meta-Ensembling framework for efficient Neural Architecture Search with synergized zero-cost proxies"
+topic:          "Agent"
+topic_class:    "secondary"
 date:           2026-01-05 00:01:00 +0800
 selected:       false
 pub:            "International Conference on Neural Information Processing (ICONIP)"

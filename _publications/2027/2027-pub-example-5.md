@@ -1,5 +1,7 @@
 ---
 title:          "SxPxC: Transforming Multi-Agent Social Simulation from Isolated Personas to Socialized Intelligence via Structural Decoupling"
+topic:          "Agent"
+topic_class:    "secondary"
 date:           2027-05-12 00:01:00 +0800
 selected:       false
 pub:            "Under Review"

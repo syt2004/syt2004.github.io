@@ -1,7 +1,7 @@
 ---
 title:          "Detach: Cross-domain Learning for Long-Horizon Tasks via Mixture of Disentangled Experts"
 topic:          "Manipulation"
-topic_class:    "warning"
+topic_class:    "primary"
 date:           2026-01-05 00:01:00 +0800
 selected:       false
 pub:            "Life Long Agent @ ICLR"

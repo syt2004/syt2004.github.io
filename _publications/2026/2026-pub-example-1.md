@@ -5,6 +5,7 @@ topic_class:    "secondary"
 date:           2026-01-05 00:01:00 +0800
 selected:       false
 pub:            "ACM International Conference on Multimedia (ACM MM)"
+accepted:       true
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'

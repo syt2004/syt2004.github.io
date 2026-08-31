@@ -5,6 +5,7 @@ topic_class:    "success"
 date:           2026-01-05 00:01:00 +0800
 selected:       false
 pub:            "AAAI Conference on Artificial Intelligence(AAAI)"
+accepted:       true
 pub_date:       "2026"
 abstract: >-
   We propose MultiMotion, a DiT-based multi-object motion transfer framework with mask-aware AMF and RectPC solver, validated on our new MultiMotionEval benchmark with superior metrics.

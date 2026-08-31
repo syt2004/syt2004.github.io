@@ -5,6 +5,7 @@ topic_class:    "primary"
 date:           2026-01-05 00:01:00 +0800
 selected:       false
 pub:            "Life Long Agent @ ICLR"
+accepted:       true
 pub_date:       "2026"
 abstract: >-
   We propose a bio-inspired dual-stream disentanglement framework separating environment and self-state representations to enable cross-domain, cross-skill generalization for human-scene long-horizon tasks, boosting subtask success by 23% and execution efficiency by 29% over prior methods.

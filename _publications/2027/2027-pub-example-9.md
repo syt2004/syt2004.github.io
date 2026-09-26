@@ -12,7 +12,7 @@ pub_date:       "2027"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
   We proposes an imitation‑learning framework that obtains adaptive execution anchors via self‑supervised learning to construct an execution‑flow graph, and conditions a diffusion policy with this graph to address the challenge where locally similar states demand distinct actions under different contexts in long‑horizon robotic manipulation tasks, achieving superior performance across multiple simulation benchmarks.
-cover:          /assets/images/covers/atlas.png
+cover:          /assets/images/covers/actatlas.png
 authors:
   - Haidong Huang*
   - Yutong Shen*

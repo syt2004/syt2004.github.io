@@ -23,10 +23,14 @@ body {
 body > .container,
 body > .container-lg,
 body > .container-xl,
-body > footer,
-body > nav {
+body > main,
+body > footer {
     position: relative;
     z-index: 1;
+}
+
+body > nav {
+    z-index: 1030;
 }
 
 a {
@@ -45,6 +49,10 @@ a:hover {
 .list-group-item {
     color: #f2f2f2 !important;
     background-color: rgba(13, 13, 13, 0.88) !important;
+}
+
+body.bg-light {
+    background-color: #050505 !important;
 }
 
 .card,
@@ -159,6 +167,41 @@ h1, h2, h3, h4, h5, h6,
     color: #f2f2f2;
     background: #111111;
     border-color: rgba(255, 255, 255, 0.14);
+}
+
+.btn-primary,
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #080808 !important;
+    background-color: #f2f2f2 !important;
+    border-color: #f2f2f2 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.15) !important;
+}
+
+.btn-light,
+.badge-light {
+    color: #eaeaea;
+    background-color: rgba(255, 255, 255, 0.09);
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+.img-thumbnail {
+    background-color: #111111;
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+.publication-mobile-surface {
+    color: #f2f2f2;
+    background-color: rgba(13, 13, 13, 0.92) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .inline-badge {

@@ -9,7 +9,19 @@ group: Project and Competition Demos
   <h3 class="mb-4 text-center">Project and Competition Demos</h3>
   <div class="project-demo-grid">
     <div class="project-demo-item">
-      <h5 class="project-demo-title">IROS Teleoperation Workshop</h5>
+      <h5 class="project-demo-title project-demo-title-orange">ALAS Multimedia Demo</h5>
+      <div class="project-demo-video">
+        <video playsinline preload="metadata">
+          <source src="{{ 'assets/videos/project-competition-demo-6.mp4' | relative_url }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button type="button" class="project-demo-toggle" aria-label="Play video">
+          <i class="fas fa-play" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <div class="project-demo-item">
+      <h5 class="project-demo-title project-demo-title-orange">IROS Teleoperation Workshop</h5>
       <div class="project-demo-video">
         <video playsinline preload="metadata">
           <source src="{{ 'assets/videos/project-competition-demo-5.mp4' | relative_url }}" type="video/mp4">

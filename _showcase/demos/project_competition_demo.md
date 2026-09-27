@@ -23,7 +23,7 @@ group: Project and Competition Demos
     <div class="project-demo-item">
       <h5 class="project-demo-title project-demo-title-orange">MetaWorld-X Multimedia Demo</h5>
       <div class="project-demo-video">
-        <video playsinline preload="metadata">
+        <video playsinline preload="metadata" poster="{{ 'assets/images/metaworld-x-demo-poster.jpg' | relative_url }}">
           <source src="{{ 'assets/videos/project-competition-demo-7.mp4' | relative_url }}" type="video/mp4">
           Your browser does not support the video tag.
         </video>

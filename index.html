@@ -27,6 +27,8 @@ navbar_title: Home
         {% endif %}
         {% endif %}
 
+        {% include widgets/services_card.html %}
+
         {% if site.data.display.homepage.show_selected_publications %}
         {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
         {%

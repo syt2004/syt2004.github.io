@@ -264,3 +264,35 @@ h1, h2, h3, h4, h5, h6,
 .blog-toc-nav {
     scrollbar-width: none;
 }
+
+/* Monochrome dark-theme compatibility */
+.blog-content h1,
+.blog-content h2,
+.blog-content table th,
+.blog-content table td {
+    border-color: rgba(255, 255, 255, 0.14);
+}
+
+.blog-content table th {
+    color: #f2f2f2;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.blog-content blockquote,
+.blog-toc-title,
+.blog-toc-list a {
+    color: #a8a8a8;
+}
+
+.blog-toc-nav {
+    border-left-color: rgba(255, 255, 255, 0.16);
+}
+
+.blog-toc-list a:hover,
+.blog-toc-list a.toc-active {
+    color: #ffffff;
+}
+
+.blog-main article {
+    border-color: rgba(255, 255, 255, 0.14) !important;
+}

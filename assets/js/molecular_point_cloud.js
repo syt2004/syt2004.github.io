@@ -46,9 +46,9 @@
                 vy: (Math.random() - 0.5) * 0.09,
                 angle: Math.random() * Math.PI * 2,
                 spin: (Math.random() - 0.5) * 0.0018,
-                size: Math.random() * 15 + 24,
+                size: Math.random() * 22 + 32,
                 atoms: Math.floor(Math.random() * 3) + 4,
-                alpha: Math.random() * 0.07 + 0.08
+                alpha: Math.random() * 0.09 + 0.17
             };
         });
     }
@@ -73,8 +73,11 @@
             });
         }
 
+        context.save();
+        context.shadowColor = 'rgba(255, 255, 255, 0.2)';
+        context.shadowBlur = 7;
         context.strokeStyle = 'rgba(255, 255, 255, ' + molecule.alpha + ')';
-        context.lineWidth = 0.8;
+        context.lineWidth = 1.15;
         atoms.forEach(function (atom, index) {
             var next = atoms[(index + 1) % atoms.length];
             context.beginPath();
@@ -87,10 +90,11 @@
 
         atoms.concat([{ x: molecule.x, y: molecule.y }]).forEach(function (atom, index) {
             context.beginPath();
-            context.arc(atom.x, atom.y, index === atoms.length ? 2.4 : 1.8, 0, Math.PI * 2);
-            context.fillStyle = 'rgba(255, 255, 255, ' + (molecule.alpha + 0.1) + ')';
+            context.arc(atom.x, atom.y, index === atoms.length ? 3.4 : 2.5, 0, Math.PI * 2);
+            context.fillStyle = 'rgba(255, 255, 255, ' + Math.min(molecule.alpha + 0.2, 0.58) + ')';
             context.fill();
         });
+        context.restore();
     }
 
     function draw() {

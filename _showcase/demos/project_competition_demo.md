@@ -8,32 +8,41 @@ group: Project and Competition Demos
 <div class="project-demos p-3 mx-auto">
   <h3 class="mb-4 text-center">Project and Competition Demos</h3>
   <div class="project-demo-grid">
-    <div class="project-demo-video">
-      <video playsinline preload="metadata">
-        <source src="{{ 'assets/videos/project-competition-demo.mp4' | relative_url }}" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <button type="button" class="project-demo-toggle" aria-label="Play video">
-        <i class="fas fa-play" aria-hidden="true"></i>
-      </button>
+    <div class="project-demo-item">
+      <h5 class="project-demo-title">Noetix Sim2Real Walking Training</h5>
+      <div class="project-demo-video">
+        <video playsinline preload="metadata">
+          <source src="{{ 'assets/videos/project-competition-demo.mp4' | relative_url }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button type="button" class="project-demo-toggle" aria-label="Play video">
+          <i class="fas fa-play" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
-    <div class="project-demo-video">
-      <video playsinline preload="metadata">
-        <source src="{{ 'assets/videos/project-competition-demo-2.mp4' | relative_url }}" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <button type="button" class="project-demo-toggle" aria-label="Play video">
-        <i class="fas fa-play" aria-hidden="true"></i>
-      </button>
+    <div class="project-demo-item">
+      <h5 class="project-demo-title">Vision-Detection-Based Autonomous Vehicle</h5>
+      <div class="project-demo-video">
+        <video playsinline preload="metadata">
+          <source src="{{ 'assets/videos/project-competition-demo-2.mp4' | relative_url }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button type="button" class="project-demo-toggle" aria-label="Play video">
+          <i class="fas fa-play" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
-    <div class="project-demo-video project-demo-video-last">
-      <video playsinline preload="metadata">
-        <source src="{{ 'assets/videos/project-competition-demo-3.mp4' | relative_url }}" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <button type="button" class="project-demo-toggle" aria-label="Play video">
-        <i class="fas fa-play" aria-hidden="true"></i>
-      </button>
+    <div class="project-demo-item project-demo-item-last">
+      <h5 class="project-demo-title">Visual SLAM and Spatial Mapping</h5>
+      <div class="project-demo-video">
+        <video playsinline preload="metadata">
+          <source src="{{ 'assets/videos/project-competition-demo-3.mp4' | relative_url }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button type="button" class="project-demo-toggle" aria-label="Play video">
+          <i class="fas fa-play" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -49,6 +58,14 @@ group: Project and Competition Demos
     gap: 28px;
   }
 
+  .project-demo-title {
+    min-height: 1.5em;
+    margin: 0 0 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
   .project-demo-video {
     position: relative;
     overflow: hidden;
@@ -58,7 +75,7 @@ group: Project and Competition Demos
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   }
 
-  .project-demo-video-last {
+  .project-demo-item-last {
     grid-column: 1;
     width: 100%;
     justify-self: stretch;
@@ -87,7 +104,7 @@ group: Project and Competition Demos
     line-height: 58px;
     text-align: center;
     cursor: pointer;
-    transition: background 0.2s ease, transform 0.2s ease;
+    transition: opacity 0.2s ease, background 0.2s ease, transform 0.2s ease;
   }
 
   .project-demo-toggle:hover,
@@ -97,13 +114,22 @@ group: Project and Competition Demos
     outline: none;
   }
 
+  .project-demo-video.is-playing .project-demo-toggle {
+    opacity: 0;
+  }
+
+  .project-demo-video.is-playing:hover .project-demo-toggle,
+  .project-demo-video.is-playing .project-demo-toggle:focus-visible {
+    opacity: 1;
+  }
+
   @media (max-width: 767.98px) {
     .project-demo-grid {
       grid-template-columns: 1fr;
       gap: 18px;
     }
 
-    .project-demo-video-last {
+    .project-demo-item-last {
       grid-column: auto;
       width: 100%;
     }
@@ -121,6 +147,7 @@ group: Project and Competition Demos
         var isPaused = video.paused || video.ended;
         icon.className = isPaused ? 'fas fa-play' : 'fas fa-pause';
         button.setAttribute('aria-label', isPaused ? 'Play video' : 'Pause video');
+        container.classList.toggle('is-playing', !isPaused);
       }
 
       button.addEventListener('click', function () {

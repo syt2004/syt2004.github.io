@@ -9,6 +9,18 @@ group: Project and Competition Demos
   <h3 class="mb-4 text-center">Project and Competition Demos</h3>
   <div class="project-demo-grid">
     <div class="project-demo-item">
+      <h5 class="project-demo-title project-demo-title-orange">Detach Media Demo</h5>
+      <div class="project-demo-video">
+        <video playsinline preload="metadata">
+          <source src="{{ 'assets/videos/project-competition-demo-4.mp4' | relative_url }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button type="button" class="project-demo-toggle" aria-label="Play video">
+          <i class="fas fa-play" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <div class="project-demo-item">
       <h5 class="project-demo-title">Noetix Sim2Real Walking Training</h5>
       <div class="project-demo-video">
         <video playsinline preload="metadata">
@@ -32,23 +44,11 @@ group: Project and Competition Demos
         </button>
       </div>
     </div>
-    <div class="project-demo-item project-demo-item-last">
+    <div class="project-demo-item">
       <h5 class="project-demo-title">Visual SLAM and Spatial Mapping</h5>
       <div class="project-demo-video">
         <video playsinline preload="metadata">
           <source src="{{ 'assets/videos/project-competition-demo-3.mp4' | relative_url }}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <button type="button" class="project-demo-toggle" aria-label="Play video">
-          <i class="fas fa-play" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class="project-demo-item">
-      <h5 class="project-demo-title project-demo-title-orange">Detach Media Demo</h5>
-      <div class="project-demo-video">
-        <video playsinline preload="metadata">
-          <source src="{{ 'assets/videos/project-competition-demo-4.mp4' | relative_url }}" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         <button type="button" class="project-demo-toggle" aria-label="Play video">
@@ -89,12 +89,6 @@ group: Project and Competition Demos
     border-radius: 0.75rem;
     background: #000;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  }
-
-  .project-demo-item-last {
-    grid-column: 1;
-    width: 100%;
-    justify-self: stretch;
   }
 
   .project-demo-video video {
@@ -145,10 +139,6 @@ group: Project and Competition Demos
       gap: 18px;
     }
 
-    .project-demo-item-last {
-      grid-column: auto;
-      width: 100%;
-    }
   }
 </style>
 

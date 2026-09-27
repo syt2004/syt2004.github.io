@@ -59,9 +59,9 @@ group: Project and Competition Demos
   }
 
   .project-demo-video-last {
-    grid-column: 1 / -1;
-    width: calc(50% - 14px);
-    justify-self: center;
+    grid-column: 1;
+    width: 100%;
+    justify-self: stretch;
   }
 
   .project-demo-video video {

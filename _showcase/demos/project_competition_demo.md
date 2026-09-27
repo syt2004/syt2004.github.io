@@ -44,6 +44,18 @@ group: Project and Competition Demos
         </button>
       </div>
     </div>
+    <div class="project-demo-item">
+      <h5 class="project-demo-title project-demo-title-orange">Detach Media Demo</h5>
+      <div class="project-demo-video">
+        <video playsinline preload="metadata">
+          <source src="{{ 'assets/videos/project-competition-demo-4.mp4' | relative_url }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button type="button" class="project-demo-toggle" aria-label="Play video">
+          <i class="fas fa-play" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -64,6 +76,10 @@ group: Project and Competition Demos
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
+  }
+
+  .project-demo-title-orange {
+    color: #f28c28;
   }
 
   .project-demo-video {

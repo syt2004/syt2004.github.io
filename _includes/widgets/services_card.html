@@ -1,0 +1,16 @@
+{% if site.data.profile.services %}
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-user-check"></i> Services</h6>
+    <div class="px-3 py-2 small">
+        <ul class="list-unstyled mb-0">
+            {% for item in site.data.profile.services %}
+            <li class="py-1 d-flex align-items-baseline">
+                <i class="fas fa-check-circle text-muted mr-2"></i>
+                <strong>{{ item.venue }}</strong>
+                <span class="ml-2 text-muted">{{ item.role }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endif %}

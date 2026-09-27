@@ -4,7 +4,7 @@
 
     var context = canvas.getContext('2d');
     var particles = [];
-    var molecules = [];
+    var cloudFields = [];
     var animationFrame = null;
     var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
@@ -16,7 +16,7 @@
         canvas.style.height = window.innerHeight + 'px';
         context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
         createParticles();
-        createMolecules();
+        createCloudFields();
     }
 
     function createParticles() {
@@ -36,62 +36,69 @@
         });
     }
 
-    function createMolecules() {
-        var count = window.innerWidth < 768 ? 4 : 9;
-        molecules = Array.from({ length: count }, function (_, index) {
+    function createCloudFields() {
+        var count = window.innerWidth < 768 ? 3 : 5;
+        var pointsPerCloud = window.innerWidth < 768 ? 55 : 95;
+
+        cloudFields = Array.from({ length: count }, function (_, index) {
+            var radiusX = Math.random() * 85 + 175;
+            var radiusY = Math.random() * 60 + 115;
             return {
-                x: ((index + 0.7) / count) * window.innerWidth,
-                y: Math.random() * window.innerHeight,
-                vx: (Math.random() - 0.5) * 0.11,
-                vy: (Math.random() - 0.5) * 0.09,
+                x: ((index + 0.45) / count) * window.innerWidth,
+                y: ((index % 2) * 0.58 + 0.2) * window.innerHeight,
+                vx: (Math.random() - 0.5) * 0.08,
+                vy: (Math.random() - 0.5) * 0.06,
                 angle: Math.random() * Math.PI * 2,
-                spin: (Math.random() - 0.5) * 0.0018,
-                size: Math.random() * 22 + 32,
-                atoms: Math.floor(Math.random() * 3) + 4,
-                alpha: Math.random() * 0.09 + 0.17
+                spin: (Math.random() - 0.5) * 0.00055,
+                phase: Math.random() * Math.PI * 2,
+                radiusX: radiusX,
+                radiusY: radiusY,
+                points: Array.from({ length: pointsPerCloud }, function () {
+                    var theta = Math.random() * Math.PI * 2;
+                    var radius = Math.pow(Math.random(), 1.55);
+                    return {
+                        x: Math.cos(theta) * radius * radiusX,
+                        y: Math.sin(theta) * radius * radiusY,
+                        radius: Math.random() * 1.25 + 0.45,
+                        alpha: (1 - radius) * 0.3 + Math.random() * 0.16 + 0.08,
+                        twinkle: Math.random() * Math.PI * 2
+                    };
+                })
             };
         });
     }
 
-    function drawMolecule(molecule) {
+    function drawCloudField(cloud, time) {
         if (!reducedMotion) {
-            molecule.x += molecule.vx;
-            molecule.y += molecule.vy;
-            molecule.angle += molecule.spin;
-            if (molecule.x < -80) molecule.x = window.innerWidth + 80;
-            if (molecule.x > window.innerWidth + 80) molecule.x = -80;
-            if (molecule.y < -80) molecule.y = window.innerHeight + 80;
-            if (molecule.y > window.innerHeight + 80) molecule.y = -80;
+            cloud.x += cloud.vx;
+            cloud.y += cloud.vy;
+            cloud.angle += cloud.spin;
+            if (cloud.x < -cloud.radiusX) cloud.x = window.innerWidth + cloud.radiusX;
+            if (cloud.x > window.innerWidth + cloud.radiusX) cloud.x = -cloud.radiusX;
+            if (cloud.y < -cloud.radiusY) cloud.y = window.innerHeight + cloud.radiusY;
+            if (cloud.y > window.innerHeight + cloud.radiusY) cloud.y = -cloud.radiusY;
         }
 
-        var atoms = [];
-        for (var i = 0; i < molecule.atoms; i += 1) {
-            var angle = molecule.angle + (Math.PI * 2 * i / molecule.atoms);
-            atoms.push({
-                x: molecule.x + Math.cos(angle) * molecule.size,
-                y: molecule.y + Math.sin(angle) * molecule.size
-            });
-        }
-
+        var pulse = 1 + Math.sin(time * 0.00035 + cloud.phase) * 0.07;
         context.save();
-        context.shadowColor = 'rgba(255, 255, 255, 0.2)';
-        context.shadowBlur = 7;
-        context.strokeStyle = 'rgba(255, 255, 255, ' + molecule.alpha + ')';
-        context.lineWidth = 1.15;
-        atoms.forEach(function (atom, index) {
-            var next = atoms[(index + 1) % atoms.length];
-            context.beginPath();
-            context.moveTo(molecule.x, molecule.y);
-            context.lineTo(atom.x, atom.y);
-            context.moveTo(atom.x, atom.y);
-            context.lineTo(next.x, next.y);
-            context.stroke();
-        });
+        context.translate(cloud.x, cloud.y);
+        context.rotate(cloud.angle);
+        context.scale(pulse, pulse);
 
-        atoms.concat([{ x: molecule.x, y: molecule.y }]).forEach(function (atom, index) {
+        var fog = context.createRadialGradient(0, 0, 0, 0, 0, cloud.radiusX);
+        fog.addColorStop(0, 'rgba(255, 255, 255, 0.045)');
+        fog.addColorStop(0.45, 'rgba(255, 255, 255, 0.018)');
+        fog.addColorStop(1, 'rgba(255, 255, 255, 0)');
+        context.fillStyle = fog;
+        context.beginPath();
+        context.ellipse(0, 0, cloud.radiusX, cloud.radiusY, 0, 0, Math.PI * 2);
+        context.fill();
+
+        cloud.points.forEach(function (point) {
+            var shimmer = reducedMotion ? 0 : Math.sin(time * 0.0012 + point.twinkle) * 0.06;
             context.beginPath();
-            context.arc(atom.x, atom.y, index === atoms.length ? 3.4 : 2.5, 0, Math.PI * 2);
-            context.fillStyle = 'rgba(255, 255, 255, ' + Math.min(molecule.alpha + 0.2, 0.58) + ')';
+            context.arc(point.x, point.y, point.radius, 0, Math.PI * 2);
+            context.fillStyle = 'rgba(255, 255, 255, ' + Math.max(0.06, point.alpha + shimmer) + ')';
             context.fill();
         });
         context.restore();
@@ -135,7 +142,10 @@
             }
         }
 
-        molecules.forEach(drawMolecule);
+        var time = window.performance.now();
+        cloudFields.forEach(function (cloud) {
+            drawCloudField(cloud, time);
+        });
 
         if (!reducedMotion) animationFrame = window.requestAnimationFrame(draw);
     }

@@ -10,7 +10,7 @@ group: Project and Competition Demos
   <div class="project-demo-grid">
     <div class="project-demo-item">
       <h5 class="project-demo-title project-demo-title-orange">CQ-FM Multimedia Demo</h5>
-      <div class="project-demo-video">
+      <div class="project-demo-video project-demo-video-contain">
         <video playsinline preload="metadata" poster="{{ 'assets/images/cq-fm-demo-poster.jpg' | relative_url }}">
           <source src="{{ 'assets/videos/project-competition-demo-8.mp4' | relative_url }}" type="video/mp4">
           Your browser does not support the video tag.
@@ -144,6 +144,10 @@ group: Project and Competition Demos
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .project-demo-video-contain video {
+    object-fit: contain;
   }
 
   .project-demo-toggle {

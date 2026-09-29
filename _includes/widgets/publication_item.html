@@ -12,6 +12,7 @@
             <h5 class="mt-0 mb-1 font-weight-normal">
                 {{ item.title }}
                 {% if item.topic %}<span class="badge badge-pill badge-publication-topic badge-{{ item.topic_class | default: 'secondary' }}">{{ item.topic }}</span>{% endif %}
+                {% if item.presentation %}<span class="badge badge-pill badge-warning badge-publication-award"><i class="fas fa-trophy" aria-hidden="true"></i> {{ item.presentation }}</span>{% endif %}
             </h5>
             <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
             <p class="mt-0 mb-0 small">{{item.pub_pre}}<i{% if item.accepted %} class="text-success font-weight-bold"{% endif %}>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
@@ -39,6 +40,7 @@
                 <h5 class="mt-0 mb-1 font-weight-normal">
                     {{ item.title }}
                     {% if item.topic %}<span class="badge badge-pill badge-publication-topic badge-{{ item.topic_class | default: 'secondary' }}">{{ item.topic }}</span>{% endif %}
+                    {% if item.presentation %}<span class="badge badge-pill badge-warning badge-publication-award"><i class="fas fa-trophy" aria-hidden="true"></i> {{ item.presentation }}</span>{% endif %}
                 </h5>
                 <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
                 <p class="mt-0 mb-0 small">{{item.pub_pre}}<i{% if item.accepted %} class="text-success font-weight-bold"{% endif %}>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>

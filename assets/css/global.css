@@ -208,6 +208,13 @@ div.lazy {
     white-space: nowrap;
 }
 
+.badge-publication-award {
+    font-size: 55%;
+    vertical-align: middle;
+    margin-left: 0.35rem;
+    white-space: nowrap;
+}
+
 .email-text {
     font-family: Source Code Pro, monospace;
 }

@@ -22,10 +22,17 @@ twitter: your_twitter_id  # Do not include the '@' symbol
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a member of the Robotics Integrated Laboratory, School of Information Science and Technology, Beijing University of Technology. In the early stage of my undergraduate studies, my research focused on applications of foundation models such as large language models and vision‑language models. Later, I dedicated myself to integrating these technologies into Embodied AI learning, My primary research now centers on robotic manipulation algorithms and the bottlenecks encountered during manipulation tasks. My algorithmic research covers <span style="color:#2563eb; font-weight:bold;">dexterous hands</span>, <span style="color:#16a34a; font-weight:bold;">robotic arms</span>, and <span style="color:#ea580c; font-weight:bold;">humanoids</span>. I am passionate about all three domains rather than confining myself to one overly narrow area. Moving forward, I aim to advance my research in parallel across these three fields and develop insightful original ideas.
+    I am a member of the Robot Integration Laboratory, Faculty of Information Science and Technology, Beijing University of Technology. In the early stage of my undergraduate studies, my research focused on the applications of foundation models such as large language models and vision-language models. Later, I oriented my research toward embodied intelligence. Under the supervision of <a href="https://leizhang-public.github.io/" target="_blank" rel="noopener noreferrer">Lei Zhang</a>, I work on robot dexterous manipulation, and under the guidance of <a href="https://fengtt42.github.io/" target="_blank" rel="noopener noreferrer">Tongtong Feng</a>, I conduct research on the generalization of human motion. These constitute my two primary research areas.
   </p>
   <p>
-    In addition, I am applying for graduate positions. Feel free to reach out to me if you are interested in potential collaborations.
+    Furthermore, I am applying for graduate positions. Please feel free to contact me if you are interested in potential collaboration.
+  </p>
+  <p class="mb-0">
+    <strong>Interests:</strong>
+    <span style="color:#2563eb; font-weight:600;">Robotics</span>,
+    <span style="color:#9333ea; font-weight:600;">HCI</span>,
+    <span style="color:#ea580c; font-weight:600;">Computer Vision</span>,
+    <span style="color:#16a34a; font-weight:600;">Multimodal Learning</span>.
   </p>
 
 portrait_url: assets/images/etc/avatar.png

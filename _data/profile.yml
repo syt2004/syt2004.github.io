@@ -22,17 +22,17 @@ twitter: your_twitter_id  # Do not include the '@' symbol
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a member of the Robot Integration Laboratory, Faculty of Information Science and Technology, Beijing University of Technology. In the early stage of my undergraduate studies, my research focused on the applications of foundation models such as large language models and vision-language models. Later, I oriented my research toward embodied intelligence. Under the supervision of <a href="https://leizhang-public.github.io/" target="_blank" rel="noopener noreferrer">Lei Zhang</a>, I work on robot dexterous manipulation, and under the guidance of <a href="https://fengtt42.github.io/" target="_blank" rel="noopener noreferrer">Tongtong Feng</a>, I conduct research on the generalization of human motion. These constitute my two primary research areas.
+    I am a member of the Robot Integration Laboratory, Faculty of Information Science and Technology, Beijing University of Technology. In the early stage of my undergraduate studies, my research focused on the applications of foundation models such as large language models and vision-language models. Later, I oriented my research toward embodied intelligence. Under the supervision of <a href="https://leizhang-public.github.io/" target="_blank" rel="noopener noreferrer" style="color:#38bdf8; font-weight:700; text-decoration-color:#38bdf8;">Lei Zhang</a>, I work on <span style="color:#fb923c; font-weight:600;">robot dexterous manipulation</span>, and under the guidance of <a href="https://fengtt42.github.io/" target="_blank" rel="noopener noreferrer" style="color:#c084fc; font-weight:700; text-decoration-color:#c084fc;">Tongtong Feng</a>, I conduct research on the <span style="color:#4ade80; font-weight:600;">generalization of human motion</span>. These constitute my two primary research areas.
   </p>
   <p>
     Furthermore, I am applying for graduate positions. Please feel free to contact me if you are interested in potential collaboration.
   </p>
   <p class="mb-0">
     <strong>Interests:</strong>
-    <span style="color:#2563eb; font-weight:600;">Robotics</span>,
-    <span style="color:#9333ea; font-weight:600;">HCI</span>,
-    <span style="color:#ea580c; font-weight:600;">Computer Vision</span>,
-    <span style="color:#16a34a; font-weight:600;">Multimodal Learning</span>.
+    <span style="color:#60a5fa; font-weight:600;">Robotics</span>,
+    <span style="color:#c084fc; font-weight:600;">HCI</span>,
+    <span style="color:#fb923c; font-weight:600;">Computer Vision</span>,
+    <span style="color:#4ade80; font-weight:600;">Multimodal Learning</span>.
   </p>
 
 portrait_url: assets/images/etc/avatar.png

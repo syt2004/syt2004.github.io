@@ -1,6 +1,6 @@
 ---
 title:          "Preserving Operator Intent Under Actuation Constraints: Teleoperation of Manipulators with Coupled Transmissions"
-topic:          "Manipulation"
+topic:          "Robotics"
 topic_class:    "primary"
 date:           2026-01-05 00:01:00 +0800
 selected:       false

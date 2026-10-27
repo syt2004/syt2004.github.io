@@ -1,6 +1,6 @@
 ---
 title:          "FENAS: A Few-shot meta-Ensembling framework for efficient Neural Architecture Search with synergized zero-cost proxies"
-topic:          "Agent"
+topic:          "Multimodal"
 topic_class:    "secondary"
 date:           2026-01-05 00:01:00 +0800
 selected:       false

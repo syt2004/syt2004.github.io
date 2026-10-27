@@ -1,6 +1,6 @@
 ---
 title:          "ActAtlas: Learning Adaptive Execution Atlases for Long-Horizon Robot Manipulation"
-topic:          "Manipulation"
+topic:          "Robotics"
 topic_class:    "primary"
 date:           2027-05-12 00:01:00 +0800
 selected:       true

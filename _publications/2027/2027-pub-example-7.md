@@ -1,6 +1,6 @@
 ---
 title:          "Anchoring Personal Aesthetics in Music Generation through Cross-Modal Distillation and Automated Six-Dimensional Evaluation"
-topic:          "Agent"
+topic:          "Multimodal"
 topic_class:    "secondary"
 date:           2027-05-12 00:01:00 +0800
 selected:       false

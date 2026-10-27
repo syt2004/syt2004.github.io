@@ -1,6 +1,6 @@
 ---
 title:          "The Eye of Sherlock Holmes: Uncovering User Private Attribute  Profiling via Vision-Language Model Agentic Framework"
-topic:          "Agent"
+topic:          "Multimodal"
 topic_class:    "secondary"
 date:           2025-01-05 00:01:00 +0800
 selected:       false

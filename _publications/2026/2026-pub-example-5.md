@@ -1,6 +1,6 @@
 ---
 title:          "Detach: Cross-domain Learning for Long-Horizon Tasks via Mixture of Disentangled Experts"
-topic:          "Manipulation"
+topic:          "Robotics"
 topic_class:    "primary"
 date:           2026-01-05 00:01:00 +0800
 selected:       false

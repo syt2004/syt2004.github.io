@@ -1,0 +1,36 @@
+:root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; color: #191919; background: #fff; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff; }
+.intro { position: relative; width: 100%; height: 100svh; min-height: 440px; overflow: hidden; }
+.hand { position: absolute; left: 50%; top: 50%; width: min(640px, 80vw, 85svh); transform: translate(-50%, -50%); }
+.hand video { display: block; width: 100%; aspect-ratio: 1; object-fit: contain; }
+.greeting { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 46%; text-align: center; max-width: 680px; margin: 0; font-size: clamp(28px, 3.4vw, 54px); font-weight: 500; line-height: 1.25; letter-spacing: -.045em; text-wrap: balance; }
+.typed { white-space: pre-line; }
+.js .greeting { visibility: hidden; }
+.js .intro.revealing .greeting { visibility: visible; }
+.intro.settled .hand { left: 13%; width: min(420px, 30vw, 70svh); }
+.js .hand { transition: left 1250ms cubic-bezier(.22,1,.36,1), width 1250ms cubic-bezier(.22,1,.36,1), top 1250ms cubic-bezier(.22,1,.36,1); }
+.cursor { display: none; width: 2px; height: .86em; margin-left: .1em; background: #282828; vertical-align: -.02em; }
+.typing .cursor { display: inline-block; animation: blink .8s step-end infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+.replay, .credit { position: absolute; bottom: 28px; font: 12px/1.5 Arial, sans-serif; color: #777; letter-spacing: .025em; }
+.replay { right: 32px; background: none; border: 0; cursor: pointer; padding: 10px; }
+.replay span { margin-left: 6px; font-size: 16px; }
+.credit { left: 32px; text-decoration: none; }
+.credit:hover, .replay:hover { color: #111; }
+:focus-visible { outline: 2px solid #555; outline-offset: 5px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+body:not(.js) .hand { left: 13%; width: min(420px, 30vw, 70svh); }
+@media (max-width: 640px) {
+  .intro { min-height: 540px; }
+  .hand { width: min(94vw, 470px); }
+  .intro.settled .hand, body:not(.js) .hand { left: 27%; top: 32%; width: min(68vw, 340px, 46svh); }
+  .greeting { left: 50%; top: 65%; width: 88%; font-size: clamp(30px, 7.8vw, 46px); }
+  .credit { left: 22px; bottom: 20px; font-size: 10px; }
+  .replay { right: 18px; bottom: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .js .hand { transition: none; }
+  .cursor { animation: none; }
+}
+

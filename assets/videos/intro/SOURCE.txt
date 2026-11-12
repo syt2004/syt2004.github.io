@@ -1,0 +1,7 @@
+Source: Sharpa official product film
+Title: SharpaWave — Sharpa’s first product, a dexterous robotic hand
+Video: https://www.youtube.com/watch?v=GcTUlOHvdOs
+Linked by official product page: https://www.sharpa.com/pages/w01
+Excerpt: 00:01:22.400–00:01:23.900, silent, cropped to the hand.
+Processing: background separation and white compositing; forward/reverse greeting.
+Original footage belongs to Sharpa; no affiliation is implied.

@@ -1,41 +1,26 @@
----
-layout: default
-title : Homepage
-navbar_title: Home
----
-
-<div class="row">
-    <div class="col-lg-3 col-md-4">
-        {% include widgets/profile_card_mini.html %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yutong Shen — AI researcher.">
+  <title>Yutong Shen</title>
+  <link rel="stylesheet" href="assets/css/intro.css">
+  <script src="assets/js/intro.js" defer></script>
+</head>
+<body>
+  <main class="intro" aria-label="Yutong Shen, AI researcher">
+    <div class="hand" aria-hidden="true">
+      <video id="wave" muted playsinline preload="auto" poster="assets/videos/intro/sharpa-wave-poster.jpg">
+        <source src="assets/videos/intro/sharpa-wave.mp4" type="video/mp4">
+      </video>
     </div>
-    <div class="col-lg-9 col-md-8">
-
-        {% include widgets/profile_card_bio_only.html %}
-
-        <!-- Debugging widgets -->
-        {% include widgets/debug_repo_name.html %}
-        {% include widgets/debug_url.html %}
-
-        {% if site.data.display.homepage.show_experience %}
-            {% include widgets/experience_card.html %}
-        {% endif %}
-
-        {% if site.data.display.homepage.show_news %}
-        {% assign count_news = site.news | size %}
-        {% if count_news > 0 %}
-        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-        {% endif %}
-        {% endif %}
-
-        {% include widgets/services_card.html %}
-
-        {% if site.data.display.homepage.show_selected_publications %}
-        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-        {%
-        include widgets/publication_card.html
-        publications=pubs
-        title='<i class="fas fa-star"></i> Selected Publications'
-        %}
-        {% endif %}
-    </div>
-</div>
+    <h1 class="greeting">
+      <span class="sr-only">Hi, I'm Yutong Shen, an AI researcher.</span>
+      <span class="typed" aria-hidden="true"><span id="typed-text">Hi, I'm Yutong Shen, an AI researcher.</span><span class="cursor"></span></span>
+    </h1>
+    <button class="replay" type="button" hidden aria-label="Replay greeting">Replay <span aria-hidden="true">↻</span></button>
+  </main>
+  <a class="credit" href="https://www.youtube.com/watch?v=GcTUlOHvdOs" target="_blank" rel="noopener noreferrer">Hand footage · Sharpa</a>
+</body>
+</html>

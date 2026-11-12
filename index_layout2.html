@@ -1,26 +1,27 @@
 ---
-layout: default
-title : Homepage
-navbar_title: Home (Layout 2)
+layout: null
 ---
-{% include widgets/profile_card.html %}
-
-{% if site.data.display.homepage.show_experience %}
-    {% include widgets/experience_card.html %}
-{% endif %}
-
-{% if site.data.display.homepage.show_news %}
-    {% assign count_news = site.news | size %}
-    {% if count_news > 0 %}
-        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-    {% endif %}
-{% endif %}
-
-{% if site.data.display.homepage.show_selected_publications %}
-    {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-    {% 
-        include widgets/publication_card.html 
-        publications=pubs
-        title='<i class="fas fa-star"></i> Selected Publications'
-    %}
-{% endif %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About {{ site.data.profile.primary_name }} — AI researcher.">
+  <title>About — {{ site.data.profile.primary_name }}</title>
+  <link rel="stylesheet" href="{{ 'assets/css/about.css' | relative_url }}?v=1">
+  <script src="{{ 'assets/js/about.js' | relative_url }}?v=1" defer></script>
+</head>
+<body>
+  <a class="back-link" href="{{ '/' | relative_url }}"><span aria-hidden="true">←</span> Home</a>
+  <main class="about-page">
+    <div class="portrait-wrap">
+      <img class="portrait" src="{{ site.data.profile.portrait_url | relative_url }}" alt="{{ site.data.profile.primary_name }}" width="300" height="300" fetchpriority="high">
+    </div>
+    <section class="introduction" aria-labelledby="about-name">
+      <h1 id="about-name">{{ site.data.profile.primary_name }}</h1>
+      <div class="biography">{{ site.data.profile.short_bio }}</div>
+      <button class="show-all" type="button" hidden>Show full introduction <span aria-hidden="true">↗</span></button>
+    </section>
+  </main>
+</body>
+</html>

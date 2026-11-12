@@ -1,0 +1,29 @@
+:root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; background: #fff; color: #222; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100svh; background: #fff; }
+.back-link { display: inline-flex; gap: 10px; align-items: center; margin: 36px 0 0 max(6vw, 24px); color: #777; text-decoration: none; font-size: 13px; }
+.back-link:hover { color: #111; }
+.about-page { display: grid; grid-template-columns: minmax(190px, 280px) minmax(0, 680px); gap: clamp(48px, 7vw, 110px); align-items: start; max-width: 1200px; margin: 86px auto 90px; padding: 0 48px; }
+.portrait-wrap { animation: portrait-arrive 1400ms cubic-bezier(.22,1,.36,1) both; }
+.portrait { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 0; box-shadow: 0 12px 38px rgba(22, 30, 42, .12), 0 2px 9px rgba(22, 30, 42, .06); }
+.introduction { padding-top: 4px; }
+h1 { font-size: clamp(30px, 3.2vw, 44px); font-weight: 500; line-height: 1.2; letter-spacing: -.04em; margin: 0 0 28px; }
+.biography { font-size: 17px; line-height: 1.85; letter-spacing: -.01em; }
+.biography p { margin: 0 0 23px; }
+.biography a, .biography span[style] { color: #275f85 !important; font-weight: 500 !important; text-decoration-color: #b9d6e8 !important; }
+.biography a { text-underline-offset: 4px; }
+.biography strong { font-weight: 600; }
+.typing-character { opacity: 0; }
+.typing-character.shown { opacity: 1; }
+.typing-character.current::after { content: ''; display: inline-block; width: 1px; height: 1em; background: #777; margin-left: 1px; margin-right: -2px; vertical-align: -.12em; }
+.show-all { border: 0; background: none; padding: 8px 0; color: #777; font: 12px/1.4 Arial, sans-serif; cursor: pointer; }
+.show-all:hover { color: #222; }
+:focus-visible { outline: 2px solid #76a7c7; outline-offset: 5px; }
+@keyframes portrait-arrive { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 700px) {
+  .about-page { grid-template-columns: 1fr; gap: 40px; margin-top: 48px; padding: 0 26px; }
+  .portrait-wrap { width: min(58vw, 240px); }
+  h1 { font-size: 32px; margin-bottom: 22px; }
+  .biography { font-size: 16px; line-height: 1.8; }
+}
+@media (prefers-reduced-motion: reduce) { .portrait-wrap { animation: none; } }

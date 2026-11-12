@@ -1,6 +1,10 @@
 :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: #fff; color: #303030; -webkit-font-smoothing: antialiased; }
 * { box-sizing: border-box; }
 body { margin: 0; min-height: 100svh; background: #fff; }
+body::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 64px; pointer-events: none;
+  background: linear-gradient(to bottom, rgba(81, 133, 246, .76) 0, rgba(81, 133, 246, .38) 2px, rgba(81, 133, 246, .14) 12px, rgba(81, 133, 246, .045) 30px, transparent 64px);
+}
 .back-link { display: inline-flex; gap: 10px; align-items: center; margin: 36px 0 0 max(6vw, 24px); color: #777; text-decoration: none; font-size: 13px; }
 .back-link:hover { color: #111; }
 .about-page { display: grid; grid-template-columns: clamp(190px, 16vw, 270px) minmax(0, 1fr); gap: clamp(36px, 4vw, 72px); align-items: start; width: 88%; margin: 86px auto 90px; }

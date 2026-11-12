@@ -11,6 +11,7 @@ accepted:       true
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
 pub_date:       "2026"
 
+keywords: "Multimodal Agents, Literature Synthesis, Academic Diagram Generation"
 abstract: >-
   We propose an agentic multimodal framework with limitation-driven recursive retrieval to build causal literature evolutionary chains and a vision-critic loop for hallucination-free academic diagram generation, which outperforms all baselines on our curated 100-topic dataset with new logical and visual evaluation metrics.
 cover:          /assets/images/covers/mess.png

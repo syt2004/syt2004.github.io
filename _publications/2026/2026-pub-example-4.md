@@ -7,6 +7,7 @@ selected:       false
 pub:            "ViSCALE @ CVPR"
 accepted:       true
 pub_date:       "2026"
+keywords: "Hierarchical World Models, Skill Composition, Humanoid Control"
 abstract: >-
   We present a hierarchical humanoid world model integrating VLM semantic planning, fused pre-trained motion expert priors and latent MPC dynamics, which resolves symbol grounding and sample inefficiency and surpasses TD-MPC2 & DreamerV3 on HumanoidBench with greatly improved average rewards and task success rates.
 cover:          /assets/images/covers/meta.png

@@ -1,6 +1,7 @@
 ---
 layout: default
 title : Publications
+body_class: academic-home
 navbar_title: Publications
 body_attr: >-
   data-spy="scroll" data-target="#navbar-year" data-offset="100"
@@ -14,9 +15,7 @@ body_attr: >-
         {% assign num_papers = year.items | size %}
         <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
         <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
-            {% for item in year.items %}
-                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
-            {% endfor %}
+            {% include widgets/home_publications.html publications=year.items hide_heading=true %}
         </div>
         {% endfor %}
     </div>

@@ -10,6 +10,7 @@ pub_post:       'Under review.'
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
 pub_date:       "2027"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
+keywords: "Multi-Agent Social Simulation, Structural Decoupling, Role-Playing Agents"
 abstract: >-
   We propose the S×P×C tri-dimensional decoupling framework paired with Dual-Chain Inference to fix Structural OOC in multi-agent social simulation by elevating group social structure as top cognitive prior, and build the BanG-Struct benchmark to verify its superior structural adherence and dialogue quality over existing role-play baselines.
 cover:          /assets/images/covers/bang.png

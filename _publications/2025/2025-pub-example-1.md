@@ -11,6 +11,7 @@ accepted:       true
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
 pub_date:       "2025"
 
+keywords: "Privacy Profiling, Vision-Language Models, Agentic Reasoning"
 abstract: >-
   We uncover the privacy risk of multi-image user private attribute profiling, build the PAPI annotated dataset and propose HolmesEye, a VLM-LLM hybrid agentic framework with multi-stage cross-image reasoning that outperforms all baselines and human evaluators on comprehensive privacy attribute prediction tasks.
 cover:          /assets/images/covers/eye.png

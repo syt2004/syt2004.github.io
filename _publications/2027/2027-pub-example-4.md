@@ -10,6 +10,7 @@ pub_post:       'Under review.'
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
 pub_date:       "2027"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
+keywords: "Lifelong Reinforcement Learning, Neural Plasticity, Continual Control"
 abstract: >-
   We propose lightweight Surgical Plasticity Maintenance (SPM) for lifelong robotic RL, which monitors dead neuron ratio and activation rank to perform targeted dormant neuron reinitialization and adaptive per-layer learning rate scaling, retaining full learning capacity and beating standard baselines on multiple continual control benchmarks.
 cover:          /assets/images/covers/spm.png

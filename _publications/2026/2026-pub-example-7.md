@@ -8,6 +8,7 @@ pub:            "5th Sensorimotor-Augmented Teleoperation @ IROS"
 accepted:       true
 presentation:   "Oral"
 pub_date:       "2026"
+keywords: "Robot Teleoperation, Actuation Constraints, Coupled Transmissions"
 abstract: >-
   We proposes an actuator‑constraint‑aware master‑slave teleoperation method for manipulators with coupled transmissions to preserve the operator’s motion intent under gravitational loads and motor saturation. It reduces motion distortion and recovery transients via coordinated command projection in actuator space, continuous angle unwrapping and feasible‑reference updates, with its effectiveness validated by real‑robot experiments and ablation studies.
 cover:          /assets/images/covers/rm.png

@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ '/assets/css/global.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}?v=2">
 </head>
-<body class="bg-light d-flex flex-column min-vh-100" {{ page.body_attr }}>
+<body class="bg-light academic-home d-flex flex-column min-vh-100" {{ page.body_attr }}>
     {% include navbar.html active_page="Blog" %}
 
     <main class="flex-grow-1">
@@ -30,14 +31,6 @@
                         <h1 class="display-4 mb-3">{{ page.title }}</h1>
                         <div class="text-muted mb-3">
                             <i class="fas fa-calendar-alt"></i> {{ page.date | date: "%B %d, %Y" }}
-                            {% if page.tags %}
-                                <span class="ml-3">
-                                    <i class="fas fa-tags"></i>
-                                    {% for tag in page.tags %}
-                                        <span class="badge badge-light">{{ tag }}</span>
-                                    {% endfor %}
-                                </span>
-                            {% endif %}
                         </div>
                     </header>
 

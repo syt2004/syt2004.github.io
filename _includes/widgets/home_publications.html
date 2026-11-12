@@ -1,8 +1,10 @@
-<section class="home-publications my-4" aria-labelledby="publications-title">
+<section class="home-publications my-4" {% unless include.hide_heading %}aria-labelledby="publications-title"{% endunless %}>
+    {% unless include.hide_heading %}
     <div class="d-flex align-items-baseline justify-content-between mb-4">
         <h2 id="publications-title">Selected Publications</h2>
         <a href="{{ '/publications' | relative_url }}">View all &rarr;</a>
     </div>
+    {% endunless %}
     {% for item in include.publications %}
     <article class="home-publication">
         {% if item.cover %}<img src="{{ item.cover | relative_url }}" alt="{{ item.title }}" loading="lazy" decoding="async">{% endif %}

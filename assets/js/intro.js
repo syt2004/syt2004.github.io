@@ -16,9 +16,8 @@
     if (token !== run || moving) return;
     moving = true;
     clearTimeout(watchdog);
-    video.pause();
     intro.classList.add('settled');
-    if (!instant) await wait(1250);
+    if (!instant) await wait(2600);
     if (token !== run) return;
     intro.classList.add('revealing');
     if (instant) {
@@ -41,7 +40,10 @@
     moving = false;
     clearTimeout(watchdog);
     video.pause();
+    intro.classList.add('resetting');
     intro.classList.remove('settled', 'revealing', 'typing');
+    intro.getBoundingClientRect();
+    intro.classList.remove('resetting');
     text.textContent = '';
     replay.hidden = true;
     if (reducedMotion.matches) {
@@ -50,7 +52,10 @@
       return;
     }
     video.currentTime = 0;
-    video.onended = () => reveal(token);
+    // Start travelling while the hand is still waving, never at a video boundary.
+    video.ontimeupdate = () => {
+      if (video.currentTime >= 1.2) reveal(token);
+    };
     video.onerror = () => reveal(token);
     watchdog = setTimeout(() => reveal(token), 9000);
     video.play().catch(() => reveal(token));

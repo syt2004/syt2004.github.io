@@ -18,6 +18,9 @@ body_attr: >-
 {% for year in pubs_by_year %}
 <section class="year-section" aria-labelledby="year-{{ year.name }}">
     <h2 id="year-{{ year.name }}">{{ year.name }}</h2>
-    {% include widgets/home_publications.html publications=year.items hide_heading=true %}
+    {% assign pinned_pubs = year.items | where: "pinned", true %}
+    {% assign other_pubs = year.items | where_exp: "item", "item.pinned != true" %}
+    {% assign ordered_pubs = pinned_pubs | concat: other_pubs %}
+    {% include widgets/home_publications.html publications=ordered_pubs hide_heading=true %}
 </section>
 {% endfor %}

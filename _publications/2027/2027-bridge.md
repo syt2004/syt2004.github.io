@@ -4,6 +4,7 @@ date: 2027-01-01 00:00:00 +0800
 submitted_at: 2026-11-07
 updated_at: 2026-11-10
 selected: false
+pinned: true
 pub: "Under Review"
 pub_date: "2027"
 submission_venue: "CVPR 2027 Conference Submission"

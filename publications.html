@@ -7,7 +7,7 @@ body_attr: >-
   data-spy="scroll" data-target="#navbar-year" data-offset="100"
 ---
 
-{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by: "pub_date" | sort: "name" | reverse %}
 
 <header class="page-heading">
     <h1>Publications</h1>

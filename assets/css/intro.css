@@ -6,6 +6,15 @@ body { margin: 0; background: #fff; }
 .hand video { display: block; width: 100%; aspect-ratio: 1; object-fit: contain; }
 .greeting { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 46%; text-align: center; max-width: 680px; margin: 0; font-size: clamp(28px, 3.4vw, 54px); font-weight: 500; line-height: 1.25; letter-spacing: -.045em; text-wrap: balance; }
 .typed { white-space: pre-line; }
+.greeting h1 { margin: 0; font: inherit; letter-spacing: inherit; }
+.social-links { position: absolute; top: calc(100% + 26px); left: 50%; transform: translateX(-50%); display: flex; gap: 12px; }
+.social-button { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; padding: 11px; border: 0; border-radius: 10px; background: #111; color: #fff; cursor: pointer; text-decoration: none; transition: background .2s, transform .2s; }
+.social-button svg { display: block; width: 20px; height: 20px; flex: none; }
+.social-button:hover { background: #333; transform: translateY(-2px); }
+.social-placeholder { cursor: default; }
+.social-placeholder:hover { background: #111; transform: none; }
+.js .social-links { opacity: 0; visibility: hidden; transform: translate(-50%, 8px); transition: opacity .6s ease, transform .6s ease, visibility .6s; }
+.js .intro.complete .social-links { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
 .js .greeting { visibility: hidden; }
 .js .intro.revealing .greeting { visibility: visible; }
 .intro.settled .hand { transform: translate(calc(-50% - 35vw), -50%); }
@@ -33,4 +42,5 @@ body:not(.js) .hand { transform: translate(calc(-50% - 35vw), -50%); }
 @media (prefers-reduced-motion: reduce) {
   .js .hand { transition: none; }
   .cursor { animation: none; }
+  .js .social-links, .social-button { transition: none; }
 }

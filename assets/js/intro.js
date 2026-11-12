@@ -32,6 +32,7 @@
     }
     if (token !== run) return;
     intro.classList.remove('typing');
+    intro.classList.add('complete');
     replay.hidden = false;
   }
 
@@ -41,7 +42,7 @@
     clearTimeout(watchdog);
     video.pause();
     intro.classList.add('resetting');
-    intro.classList.remove('settled', 'revealing', 'typing');
+    intro.classList.remove('settled', 'revealing', 'typing', 'complete');
     intro.getBoundingClientRect();
     intro.classList.remove('resetting');
     text.textContent = '';

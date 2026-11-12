@@ -19,7 +19,7 @@ body::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; he
 .show-all { border: 0; background: none; padding: 8px 0; color: #777; font: inherit; font-size: 12px; cursor: pointer; }
 .show-all:hover { color: #222; }
 .experience-section { min-width: 0; padding-left: 24px; border-left: 1px solid #e8ebef; }
-.education-section { margin-top: 16px; padding-top: 20px; border-top: 1px solid #e8ebef; }
+.experience-section > section + section { margin-top: 16px; padding-top: 20px; border-top: 1px solid #e8ebef; }
 .section-heading { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
 .section-icon { display: grid; place-items: center; width: 28px; height: 28px; flex: none; border-radius: 7px; color: #386bcc; background: #edf3ff; }
 .section-icon svg { width: 16px; height: 16px; }

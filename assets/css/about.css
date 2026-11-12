@@ -3,7 +3,7 @@
 body { margin: 0; min-height: 100svh; background: #fff; }
 .back-link { display: inline-flex; gap: 10px; align-items: center; margin: 36px 0 0 max(6vw, 24px); color: #777; text-decoration: none; font-size: 13px; }
 .back-link:hover { color: #111; }
-.about-page { display: grid; grid-template-columns: minmax(190px, 280px) minmax(0, 680px); gap: clamp(48px, 7vw, 110px); align-items: start; max-width: 1200px; margin: 86px auto 90px; padding: 0 48px; }
+.about-page { display: grid; grid-template-columns: clamp(230px, 21vw, 360px) minmax(0, 1fr); gap: clamp(36px, 4vw, 72px); align-items: start; width: 88%; margin: 86px auto 90px; }
 .portrait-wrap { animation: portrait-arrive 1400ms cubic-bezier(.22,1,.36,1) both; }
 .portrait {
   display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 0;
@@ -13,7 +13,7 @@ body { margin: 0; min-height: 100svh; background: #fff; }
   mask-composite: intersect;
 }
 .introduction { padding-top: 4px; }
-.biography { font-size: 17px; line-height: 1.85; letter-spacing: -.01em; }
+.biography { font-size: clamp(17px, 1.1vw, 21px); line-height: 1.85; letter-spacing: -.01em; }
 .biography p { margin: 0 0 23px; }
 .biography a, .biography span[style] { color: #275f85 !important; font-weight: 500 !important; text-decoration-color: #b9d6e8 !important; }
 .biography a { text-underline-offset: 4px; }
@@ -26,7 +26,7 @@ body { margin: 0; min-height: 100svh; background: #fff; }
 :focus-visible { outline: 2px solid #76a7c7; outline-offset: 5px; }
 @keyframes portrait-arrive { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 @media (max-width: 700px) {
-  .about-page { grid-template-columns: 1fr; gap: 40px; margin-top: 48px; padding: 0 26px; }
+  .about-page { grid-template-columns: 1fr; gap: 40px; width: auto; margin: 48px 26px 90px; }
   .portrait-wrap { width: min(58vw, 240px); }
   .biography { font-size: 16px; line-height: 1.8; }
 }

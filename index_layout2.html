@@ -8,7 +8,7 @@ layout: null
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="About {{ site.data.profile.primary_name }} — AI researcher.">
   <title>About — {{ site.data.profile.primary_name }}</title>
-  <link rel="stylesheet" href="{{ 'assets/css/about.css' | relative_url }}?v=1">
+  <link rel="stylesheet" href="{{ 'assets/css/about.css' | relative_url }}?v=2">
   <script src="{{ 'assets/js/about.js' | relative_url }}?v=1" defer></script>
 </head>
 <body>
@@ -17,8 +17,7 @@ layout: null
     <div class="portrait-wrap">
       <img class="portrait" src="{{ site.data.profile.portrait_url | relative_url }}" alt="{{ site.data.profile.primary_name }}" width="300" height="300" fetchpriority="high">
     </div>
-    <section class="introduction" aria-labelledby="about-name">
-      <h1 id="about-name">{{ site.data.profile.primary_name }}</h1>
+    <section class="introduction" aria-label="About me">
       <div class="biography">{{ site.data.profile.short_bio }}</div>
       <button class="show-all" type="button" hidden>Show full introduction <span aria-hidden="true">↗</span></button>
     </section>

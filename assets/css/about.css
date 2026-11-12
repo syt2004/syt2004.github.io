@@ -5,9 +5,14 @@ body { margin: 0; min-height: 100svh; background: #fff; }
 .back-link:hover { color: #111; }
 .about-page { display: grid; grid-template-columns: minmax(190px, 280px) minmax(0, 680px); gap: clamp(48px, 7vw, 110px); align-items: start; max-width: 1200px; margin: 86px auto 90px; padding: 0 48px; }
 .portrait-wrap { animation: portrait-arrive 1400ms cubic-bezier(.22,1,.36,1) both; }
-.portrait { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 0; box-shadow: 0 12px 38px rgba(22, 30, 42, .12), 0 2px 9px rgba(22, 30, 42, .06); }
+.portrait {
+  display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 0;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent), linear-gradient(to bottom, transparent, #000 6%, #000 94%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent), linear-gradient(to bottom, transparent, #000 6%, #000 94%, transparent);
+  mask-composite: intersect;
+}
 .introduction { padding-top: 4px; }
-h1 { font-size: clamp(30px, 3.2vw, 44px); font-weight: 500; line-height: 1.2; letter-spacing: -.04em; margin: 0 0 28px; }
 .biography { font-size: 17px; line-height: 1.85; letter-spacing: -.01em; }
 .biography p { margin: 0 0 23px; }
 .biography a, .biography span[style] { color: #275f85 !important; font-weight: 500 !important; text-decoration-color: #b9d6e8 !important; }
@@ -23,7 +28,6 @@ h1 { font-size: clamp(30px, 3.2vw, 44px); font-weight: 500; line-height: 1.2; le
 @media (max-width: 700px) {
   .about-page { grid-template-columns: 1fr; gap: 40px; margin-top: 48px; padding: 0 26px; }
   .portrait-wrap { width: min(58vw, 240px); }
-  h1 { font-size: 32px; margin-bottom: 22px; }
   .biography { font-size: 16px; line-height: 1.8; }
 }
 @media (prefers-reduced-motion: reduce) { .portrait-wrap { animation: none; } }

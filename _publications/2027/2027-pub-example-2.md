@@ -10,6 +10,7 @@ pub_post:       'Under review.'
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
 pub_date:       "2027"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
+keywords: "Long-Horizon Action Synthesis, Disentangled Representations, Human-Scene Interaction"
 abstract: >-
   This paper proposes a biologically inspired dual-stream disentangled framework decoupling environmental scene representations and robot self-state motor encodings, equipped with three adaptive feature fusion strategies and a staged progressive training pipeline, which achieves remarkable cross-environment and cross-skill generalization for long-horizon human-scene interaction tasks and outperforms existing state-of-the-art methods on self-designed benchmarks and HumanoidBench with higher subtask success rates and execution efficiency.
 cover:          /assets/images/covers/alas.png

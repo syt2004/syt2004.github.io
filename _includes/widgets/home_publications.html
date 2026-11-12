@@ -1,0 +1,22 @@
+<section class="home-publications my-4" aria-labelledby="publications-title">
+    <div class="d-flex align-items-baseline justify-content-between mb-4">
+        <h2 id="publications-title">Selected Publications</h2>
+        <a href="{{ '/publications' | relative_url }}">View all &rarr;</a>
+    </div>
+    {% for item in include.publications %}
+    <article class="home-publication">
+        {% if item.cover %}<img src="{{ item.cover | relative_url }}" alt="{{ item.title }}" loading="lazy" decoding="async">{% endif %}
+        <div>
+            <h3>{{ item.title }}</h3>
+            <p class="publication-venue">{{ item.pub_pre }} <i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
+            <p>{% include widgets/author_list.html authors=item.authors %}</p>
+            {% if item.keywords %}<p class="publication-keywords">Keywords: {{ item.keywords }}</p>{% endif %}
+            <p class="publication-links">
+                {% for link in item.links %}
+                {% if link[1].url %}<a href="{{ link[1].url }}" target="_blank" rel="noopener noreferrer">{{ link[0] }}</a>{% else %}<a href="{{ link[1] }}" target="_blank" rel="noopener noreferrer">{{ link[0] }}</a>{% endif %}{% unless forloop.last %}<span aria-hidden="true"> &middot; </span>{% endunless %}
+                {% endfor %}
+            </p>
+        </div>
+    </article>
+    {% endfor %}
+</section>

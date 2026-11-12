@@ -2,6 +2,7 @@
 layout: default
 title : Homepage
 navbar_title: Home
+body_class: academic-home
 ---
 
 <div class="row">
@@ -11,6 +12,8 @@ navbar_title: Home
     <div class="col-lg-9 col-md-8">
 
         {% include widgets/profile_card_bio_only.html %}
+    </div>
+</div>
 
         {% if site.data.display.homepage.show_experience %}
             {% include widgets/experience_card.html %}
@@ -25,11 +28,5 @@ navbar_title: Home
 
         {% if site.data.display.homepage.show_selected_publications %}
         {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-        {%
-        include widgets/publication_card.html
-        publications=pubs
-        title='<i class="fas fa-star"></i> Selected Publications'
-        %}
+        {% include widgets/home_publications.html publications=pubs %}
         {% endif %}
-    </div>
-</div>

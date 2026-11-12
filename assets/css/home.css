@@ -48,3 +48,17 @@
 .academic-home .blog-toc-nav a.active { color: #5185f6 !important; border-color: #5185f6; }
 .academic-home .blog-content h1, .academic-home .blog-content h2 { border: 0; }
 .academic-home .blog-entry { padding: 20px 0; }
+
+/* Keep every part of the profile on the same left edge. */
+.academic-home .row.sticky-top .text-center { text-align: left !important; }
+.academic-home .row.sticky-top .px-1:first-child { padding-left: 0 !important; }
+.academic-home .row.sticky-top .rounded-circle { border-radius: 0 !important; width: 180px; max-width: 100% !important; }
+.academic-home .page-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding-top: 16px; margin-bottom: 30px; }
+.academic-home .page-heading h1 { font-size: 25px; line-height: 1.3; font-weight: 700; margin: 0; }
+.academic-home .year-links { display: flex; gap: 20px; }
+.academic-home .year-section { margin-bottom: 36px; }
+.academic-home .year-section > h2 { scroll-margin-top: 85px; }
+.academic-home .blog-entry h5 { font-size: 17px; font-weight: 600; line-height: 1.5; }
+@media (max-width: 767px) {
+    .academic-home .navbar > .container-lg { padding-left: 22px; padding-right: 22px; }
+}

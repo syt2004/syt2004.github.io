@@ -5,6 +5,7 @@ submitted_at: 2026-11-07
 updated_at: 2026-11-10
 selected: false
 pinned: true
+pin_order: 1
 pub: "Under Review"
 pub_date: "2027"
 submission_venue: "CVPR 2027 Conference Submission"

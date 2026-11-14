@@ -28,6 +28,7 @@
 .home-publication h3 { font-family: inherit; font-size: 17px; font-weight: 600; line-height: 1.5; margin: 0 0 5px; }
 .home-publication p { margin: 0 0 3px; font-size: 14px; line-height: 1.6; }
 .publication-venue, .publication-keywords { color: #6b6b6b; }
+.publication-accepted { color: #72b787; }
 .publication-links span { margin: 0 7px; color: #999; }
 @media (max-width: 767px) {
     .academic-home { padding-top: 4.5rem; }

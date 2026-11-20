@@ -23,3 +23,20 @@ body_class: academic-home
         {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
         {% include widgets/home_publications.html publications=pubs %}
         {% endif %}
+
+<section class="projects-section" aria-labelledby="projects-title">
+    <h2 id="projects-title">Projects</h2>
+    <article class="project-entry">
+        <video class="project-video" controls playsinline preload="none" poster="{{ '/assets/images/projects/hku-home-robot.jpg' | relative_url }}" aria-label="Home service robot project demonstration">
+            <source src="{{ '/assets/videos/projects/hku-home-robot.mp4' | relative_url }}" type="video/mp4">
+            <a href="{{ '/assets/videos/projects/hku-home-robot.mp4' | relative_url }}">Watch project demonstration</a>
+        </video>
+        <div>
+            <h3>Home Service Robot Combining Agent Orchestration and Vision-Language Navigation</h3>
+            <a class="project-institution" href="https://www.hku.hk/" target="_blank" rel="noopener noreferrer">
+                <img src="{{ '/assets/images/badges/hku.webp' | relative_url }}" alt="The University of Hong Kong" loading="lazy" decoding="async">
+            </a>
+            <p><strong>My contribution:</strong> VLM-based long-horizon task decomposition and dynamic semantic map updates.</p>
+        </div>
+    </article>
+</section>

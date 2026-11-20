@@ -31,15 +31,15 @@
 .publication-accepted { color: #72b787; }
 .projects-section { margin: 48px 0; }
 .projects-section > h2 { margin-bottom: 24px; }
-.project-entry { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 28px; align-items: start; }
+.project-entry { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 32px; align-items: start; }
 .project-video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #fff; }
-.project-entry h3 { font-size: 17px; font-weight: 600; line-height: 1.5; margin: 0 0 14px; }
+.project-entry h3 { font-size: 22px; font-weight: 600; line-height: 1.5; margin: 0 0 20px; }
 .project-institution { display: inline-block; margin-bottom: 14px; }
 .project-institution img { display: block; width: 260px; max-width: 100%; height: auto; }
-.project-entry p { font-size: 14px; line-height: 1.7; margin: 0; }
+.project-entry p { font-size: 16px; line-height: 1.75; margin: 0; }
 @media (max-width: 767px) {
     .project-entry { grid-template-columns: 1fr; gap: 18px; }
-    .project-video { max-width: 480px; }
+    .project-video { max-width: 100%; }
 }
 .publication-links span { margin: 0 7px; color: #999; }
 @media (max-width: 767px) {

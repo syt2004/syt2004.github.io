@@ -32,10 +32,10 @@
 .projects-section { margin: 48px 0; }
 .projects-section > h2 { margin-bottom: 24px; }
 .project-entry { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 32px; align-items: start; }
-.project-video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #fff; }
+.project-video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #fff; border-radius: 10px; overflow: hidden; }
 .project-entry h3 { font-size: 22px; font-weight: 600; line-height: 1.5; margin: 0 0 20px; }
 .project-institution { display: inline-block; margin-bottom: 14px; }
-.project-institution img { display: block; width: 260px; max-width: 100%; height: auto; }
+.project-institution img { display: block; width: 360px; max-width: 100%; height: auto; }
 .project-entry p { font-size: 16px; line-height: 1.75; margin: 0; }
 @media (max-width: 767px) {
     .project-entry { grid-template-columns: 1fr; gap: 18px; }

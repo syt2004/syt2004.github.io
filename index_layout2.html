@@ -27,9 +27,9 @@ body_class: academic-home
 <section class="projects-section" aria-labelledby="projects-title">
     <h2 id="projects-title">Projects</h2>
     <article class="project-entry">
-        <video class="project-video" controls playsinline preload="none" poster="{{ '/assets/images/projects/hku-home-robot.jpg' | relative_url }}" aria-label="Home service robot project demonstration">
-            <source src="{{ '/assets/videos/projects/hku-home-robot.mp4' | relative_url }}" type="video/mp4">
-            <a href="{{ '/assets/videos/projects/hku-home-robot.mp4' | relative_url }}">Watch project demonstration</a>
+        <video class="project-video" controls autoplay muted loop playsinline preload="metadata" poster="{{ '/assets/images/projects/hku-home-robot.jpg' | relative_url }}" aria-label="Home service robot project demonstration">
+            <source src="{{ '/assets/videos/projects/hku-home-robot.mp4' | relative_url }}?v=2" type="video/mp4">
+            <a href="{{ '/assets/videos/projects/hku-home-robot.mp4' | relative_url }}?v=2">Watch project demonstration</a>
         </video>
         <div>
             <h3>Home Service Robot Combining Agent Orchestration and Vision-Language Navigation</h3>
